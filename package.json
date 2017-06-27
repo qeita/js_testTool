@@ -6,7 +6,7 @@
   "author": "Keita Yagi <kei.yagi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "mocha": "mocha --require babel-register _dev/assets/js/test/*.js",
+    "mocha": "mocha --require babel-register --watch _dev/assets/js/test/mocha/*.js",
     "karma": "karma start"
   },
   "devDependencies": {
