@@ -1,0 +1,27 @@
+{
+  "name": "js_testTool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/qeita/js_testTool.git",
+  "author": "Keita Yagi <kei.yagi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "mocha": "mocha --require babel-register _dev/assets/js/test/*.js",
+    "karma": "karma start"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "chai": "^4.0.2",
+    "karma": "^1.7.0",
+    "karma-browserify": "^5.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^3.4.2",
+    "watchify": "^3.9.0"
+  }
+}
