@@ -15,8 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '_dev/assets/js/test/*.js',
-      '_dev/assets/js/test/*.html'
+      '_dev/htdocs/assets/js/test/karma/*.js',
+      '_dev/htdocs/assets/js/test/karma/*.html'
     ],
 
 
@@ -28,8 +28,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '_dev/assets/js/test/*.js': ['browserify'],
-      '_dev/assets/js/test/*.html': ['html2js']
+      '_dev/htdocs/assets/js/test/karma/*.js': ['browserify'],
+      '_dev/htdocs/assets/js/test/karma/*.html': ['html2js']
     },
     browserify: {
       transform: ['babelify']

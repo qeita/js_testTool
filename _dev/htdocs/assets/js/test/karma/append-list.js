@@ -1,10 +1,10 @@
 import assert from 'assert'
-import { appendList } from '../append-list'
+import { appendList } from '../../append-list'
 
-describe('appendList', () => {
-  it('リスト追加', () => {
+describe('appendList', function(){
+  it('リスト追加', function(){
     // document.body.innerHTML = '<ul class="list"></ul>';
-    document.body.innerHTML = __html__['_dev/assets/js/test/append-list.html'];
+    document.body.innerHTML = __html__['_dev/htdocs/assets/js/test/karma/append-list.html'];
 
     let ul = document.querySelector('.list');
     assert.equal(ul.children.length, 0, '最初は0件');
