@@ -8,7 +8,8 @@
   "scripts": {
     "eslint": "eslint _dev/htdocs/assets/js/*.js",
     "mocha": "mocha --require babel-register --watch _dev/htdocs/assets/js/test/mocha/*.js",
-    "karma": "karma start"
+    "karma": "karma start",
+    "sitespeed": "sitespeed.io https://www.yahoo.co.jp/"
   },
   "devDependencies": {
     "assert": "^1.4.1",

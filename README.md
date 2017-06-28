@@ -23,7 +23,7 @@
   
 ### - 参考  
 [ESLintでJavaScriptの構文チェックを始める](https://www.tam-tam.co.jp/tipsnote/javascript/post9944.html)  
-  
+[ESLint 最初の一歩](http://qiita.com/mysticatea/items/f523dab04a25f617c87d)  
   
   
 ## ユニットテスト  
@@ -83,4 +83,22 @@ Karmaをインストール。npm scriptsに、テストコマンドを作成し�
 [一から始めるJavaScriptユニットテスト](http://developer.hatenastaff.com/entry/2016/12/05/102351)  
 [ユニットテストって何?って人向けのmochaとchaiの使い方](http://qiita.com/y_hokkey/items/f73ea6b3d5f6902396b6)  
   
-    
+
+## パフォーマンステスト  
+  
+### - パフォーマンステストを行う理由  
+- 公開前 or 公開後にサイトにかかっているリソース数やサイズの確認ができる  
+  
+### - 使用ツール  
+Basic認証下でも確認可能な[Sitespeed.io](https://www.sitespeed.io/)を使う。  
+  
+### - 使用方法  
+1. Sitespeed.ioをnpmインストール  
+`npm install -g sitespeed.io` or `yarn global add sitespeed.io`  
+  
+2. npm scriptsに、Sitespeed.ioのコマンドを作成して実行  
+`npm run sitespeed`  
+  
+### - 参考  
+[ベーシック認証をURLに直接書く](http://qiita.com/ngkazu/items/6da021edf177f40e1f26)
+  

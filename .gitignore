@@ -79,3 +79,4 @@ $RECYCLE.BIN/
 # npm packages
 node_modules
 npm-debug*
+sitespeed-result
