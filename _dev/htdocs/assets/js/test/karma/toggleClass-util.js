@@ -1,11 +1,11 @@
 import chai from 'chai'
-import { toggleClass } from '../../toggle-class'
+import { toggleClass } from '../../toggleClass-util'
 
 let assert = chai.assert;
 
 describe('toggleClass', function(){
   it('トグルクラス(無)', function(){
-    document.body.innerHTML = __html__['_dev/assets/js/test/karma/toggle-class.html'];
+    document.body.innerHTML = __html__['_dev/htdocs/assets/js/test/karma/toggleClass-util.html'];
     let main = document.querySelector('.main');
 
     assert.operator(main.className.indexOf('hoge'), '<', 0, 'hogeクラスは無');
@@ -20,7 +20,7 @@ describe('toggleClass', function(){
   });
 
   it('トグルクラス(有)', function(){
-    document.body.innerHTML = __html__['_dev/assets/js/test/karma/toggle-class.html'];
+    document.body.innerHTML = __html__['_dev/htdocs/assets/js/test/karma/toggleClass-util.html'];
     let main = document.querySelector('.main');
 
     assert.operator(main.className.indexOf('fuga'), '>=', 0, 'fugaクラスは有');
