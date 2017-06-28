@@ -4,7 +4,7 @@
  * @param {string} text リストに表示させる文字
  */
 function appendList(ul, text){
-  let li = document.createElement('li');
+  const li = document.createElement('li');
   li.textContent = text;
   ul.appendChild(li);
 }

@@ -6,6 +6,7 @@
   "author": "Keita Yagi <kei.yagi@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "eslint": "eslint _dev/htdocs/assets/js/*.js",
     "mocha": "mocha --require babel-register --watch _dev/htdocs/assets/js/test/mocha/*.js",
     "karma": "karma start"
   },
@@ -16,6 +17,7 @@
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "chai": "^4.0.2",
+    "eslint": "^4.1.1",
     "karma": "^1.7.0",
     "karma-browserify": "^5.1.1",
     "karma-chrome-launcher": "^2.2.0",

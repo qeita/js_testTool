@@ -4,7 +4,7 @@
  * @param {string} clName 付与・削除するクラス名
  */
 function toggleClass(elm, clName){
-  let result = elm.classList.contains(clName);
+  const result = elm.classList.contains(clName);
   if(result){
     // クラスがある場合、削除
     elm.classList.remove(clName);
